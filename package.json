@@ -1,6 +1,6 @@
 {
 	"name": "@a95z/slugify",
-	"version": "0.9.0",
+	"version": "1.0.0",
 	"description": "A utility function to convert a string into a URL-friendly slug, with support for string sanitization, normalization, and transformation.",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
