@@ -1,0 +1,101 @@
+{
+	"name": "@a95z/slugify",
+	"version": "0.9.0",
+	"description": "A utility function to convert a string into a URL-friendly slug, with support for string sanitization, normalization, and transformation.",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"format": "prettier \"src/**/*.ts\" --check",
+		"format:fix": "prettier \"src/**/*.ts\" --write",
+		"build": "tsup",
+		"lint": "tsc --noEmit",
+		"test": "vitest",
+		"test:prod": "vitest -w=false",
+		"prepare": "husky",
+		"commit": "git-cz"
+	},
+	"keywords": [
+		"slugify",
+		"slug",
+		"url-slug",
+		"string-utils",
+		"text-processing",
+		"typescript",
+		"esm",
+		"commonjs",
+		"url"
+	],
+	"author": {
+		"name": "Abdurezak Farah",
+		"email": "abdurazak.awil1@gmail.com",
+		"url": "https://www.abdurezak.com"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"publishConfig": {
+		"provenance": false,
+		"access": "public"
+	},
+	"devDependencies": {
+		"@changesets/cli": "^2.27.12",
+		"@commitlint/cli": "^19.7.1",
+		"@commitlint/config-conventional": "^19.7.1",
+		"@commitlint/cz-commitlint": "^19.6.1",
+		"@commitlint/types": "^19.5.0",
+		"@types/node": "22",
+		"commitizen": "^4.3.1",
+		"husky": "^8.0.3",
+		"inquirer": "9",
+		"lint-staged": "^13.3.0",
+		"prettier": "^3.5.1",
+		"tsup": "^8.3.6",
+		"typescript": "^5.7.3",
+		"vite": "^6.1.0",
+		"vitest": "^3.0.5"
+	},
+	"packageManager": "pnpm@10.4.1",
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"esbuild"
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/a95z/slugify.git"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/a95z/slugify/issues"
+	},
+	"homepage": "https://github.com/a95z/slugify#readme",
+	"contributors": [
+		{
+			"name": "Abdurezak Farah",
+			"url": "https://www.abdurezak.com",
+			"email": "abdurazak.awil1@gmail.com"
+		}
+	],
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged",
+			"pre-push": "lint-staged"
+		}
+	},
+	"config": {
+		"commitizen": {
+			"path": "@commitlint/cz-commitlint"
+		}
+	}
+}
