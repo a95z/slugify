@@ -1,5 +1,11 @@
 # @a95z/slugify
 
+## 1.0.1
+
+### Patch Changes
+
+- 01a7dd9: idk why i am publishing this version
+
 ## 1.0.0
 
 ### Major Changes
